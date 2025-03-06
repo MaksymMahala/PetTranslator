@@ -13,6 +13,7 @@ struct ClickerView: View {
     var body: some View {
         VStack {
             Text("Settings")
+                .foregroundStyle(Color.primary)
                 .font(.konkhmerSleokchherRegular32)
             
             ScrollView {

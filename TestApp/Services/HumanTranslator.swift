@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol TranslatorHumanPhrase {
-    func selectedPhrase(phrase: String, pet: String, soundPlayer: SoundPlayer)
-}
-
 class HumanTranslator: TranslatorHumanPhrase {
     func selectedPhrase(phrase: String, pet: String, soundPlayer: SoundPlayer) {
         if pet == "dog" {

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUICore
+
+extension Color {
+    static let lightGreenColor = Color("LightGreen")
+    static let lightPurpleColor = Color("LightPurple")
+}
