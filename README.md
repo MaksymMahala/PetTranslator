@@ -1,1 +1,2 @@
-![Demo Video](translator-video.mp4)
+## Demo Video
+[![Watch the video](translator-video.mp4)
