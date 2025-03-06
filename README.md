@@ -27,4 +27,4 @@ To run the Pet Translator App on your device:
 
 Clone the repository:
    ```bash
-   git clone https://github.com/your-username/pet-translator-app.git
+   git clone https://github.com/MaksymMahala/PetTranslator.git
