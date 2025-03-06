@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomTabBarView: View {
-    @State private var selectedTab = 0
+    @StateObject private var viewModel = CustomTabBarViewModel()
 
     var body: some View {
         NavigationStack {
@@ -18,7 +18,7 @@ struct CustomTabBarView: View {
                 
                 VStack {
                     ZStack {
-                        switch selectedTab {
+                        switch viewModel.selectedTab {
                         case 0:
                             TranslatorView()
                         case 1:
@@ -36,18 +36,18 @@ struct CustomTabBarView: View {
                             defaultImage: "messages",
                             selectedImage: "messages",
                             title: "Translator",
-                            isSelected: selectedTab == 0
+                            isSelected: viewModel.selectedTab == 0
                         ) {
-                            selectedTab = 0
+                            viewModel.selectedTab = 0
                         }
                         
                         TabBarButton(
                             defaultImage: "settings",
                             selectedImage: "settings",
                             title: "Clicker",
-                            isSelected: selectedTab == 1
+                            isSelected: viewModel.selectedTab == 1
                         ) {
-                            selectedTab = 1
+                            viewModel.selectedTab = 1
                         }
                     }
                     .padding()

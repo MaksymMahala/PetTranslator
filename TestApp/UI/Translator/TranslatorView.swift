@@ -32,7 +32,7 @@ struct TranslatorView: View {
     }
     
     private var background: some View {
-        LinearGradient(gradient: Gradient(colors: [.white, Color.lightGreen]), startPoint: .top, endPoint: .bottom)
+        LinearGradient(gradient: Gradient(colors: [Color.lightGreenColor.opacity(0.2), Color.lightGreenColor]), startPoint: .top, endPoint: .bottom)
             .ignoresSafeArea()
     }
     
